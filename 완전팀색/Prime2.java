@@ -34,7 +34,7 @@ public class Prime2 {
 		int answer=0;
 		String numbers = "011";
 		
-		// ¼ø¿­ ¸¸µé±â
+		// Â¼Ã¸Â¿Â­ Â¸Â¸ÂµÃ©Â±Ã¢
 		int n = numbers.length();
 		boolean[] visited = new boolean[numbers.length()];
 		Arrays.fill(visited, false);
