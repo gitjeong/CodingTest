@@ -16,15 +16,15 @@ class Printer{
 	
 }
 
-public class QueueCode {
+public class QPrinter {
     public int solution(int[] priorities, int location) {
         LinkedList<Printer> q_before = new LinkedList<>();
         LinkedList<Printer> q_after = new LinkedList<>();
         int answer = 0;
-        // Queue »ðÀÔ
+        // Queue Â»Ã°Ã€Ã”
         for(int i=0; i<priorities.length; i++)
             q_before.add(new Printer(priorities[i], i));
-        // Queue Á¤·Ä
+        // Queue ÃÂ¤Â·Ã„
         while(q_before.isEmpty() == false){
             Printer first_element = q_before.poll();
             int i;
@@ -37,7 +37,7 @@ public class QueueCode {
             if(i == q_before.size())
                 q_after.add(first_element);
         }
-        // location¿¡ ÀÖ´Â °ª Ã£±â
+        // locationÂ¿Â¡ Ã€Ã–Â´Ã‚ Â°Âª ÃƒÂ£Â±Ã¢
         for(int j=0; j<q_after.size(); j++){
             if(q_after.get(j).index == location)
                 answer = j+1;
@@ -48,7 +48,7 @@ public class QueueCode {
 	public static void main(String[] args) {
 		int[] priorities = new int[] {2, 1, 3, 2};
 		int location = 2;
-		QueueCode qc = new QueueCode();
+		QPrinter qc = new QPrinter();
 		int a = qc.solution(priorities, location);
 		System.out.println(a);
 	}
