@@ -21,10 +21,10 @@ public class QPrinter {
         LinkedList<Printer> q_before = new LinkedList<>();
         LinkedList<Printer> q_after = new LinkedList<>();
         int answer = 0;
-        // Queue »ðÀÔ
+        // Queue 삽입
         for(int i=0; i<priorities.length; i++)
             q_before.add(new Printer(priorities[i], i));
-        // Queue Á¤·Ä
+        // Queue 정렬
         while(q_before.isEmpty() == false){
             Printer first_element = q_before.poll();
             int i;
@@ -37,7 +37,7 @@ public class QPrinter {
             if(i == q_before.size())
                 q_after.add(first_element);
         }
-        // location¿¡ ÀÖ´Â °ª Ã£±â
+        // location에 있는 값 찾기
         for(int j=0; j<q_after.size(); j++){
             if(q_after.get(j).index == location)
                 answer = j+1;
