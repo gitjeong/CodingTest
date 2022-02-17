@@ -17,13 +17,13 @@ public class BigNum {
 		String number = "1231234";
 		int k = 3;
 		
-		// º¯¼ö ¼±¾ğ
+		// ÂºÂ¯Â¼Ã¶ Â¼Â±Â¾Ã°
 		// ArrayList is 2-5 times faster
 		List<Integer> number_lst = new ArrayList<>();
 		int ans_size = number.length()-k;
 		int[] ans_arr = new int[ans_size];
 		
-		// number_lst ÃÊ±âÈ­
+		// number_lst ÃƒÃŠÂ±Ã¢ÃˆÂ­
 		int number_len = number.length();
 		for(int i=0; i<number_len; i++) {
 			int temp_int = Character.getNumericValue(number.charAt(i));
