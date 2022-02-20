@@ -1,4 +1,7 @@
+package Greedy;
 import java.util.*;
+
+//aaaaaaa
 
 public class BigNum {
 	public static int[] findBiggest(List<Integer> lst, int ans_size_current) {
@@ -31,7 +34,7 @@ public class BigNum {
 		}
 		
 		while(ans_size > 0) {
-			int[] big_num = new int[2];
+			int[] big_num;
 			big_num = findBiggest(number_lst, ans_size);
 			ans_arr[number.length() - k - ans_size] = big_num[0];
 			ans_size -= 1;
