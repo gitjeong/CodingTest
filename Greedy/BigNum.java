@@ -2,7 +2,7 @@ package Greedy;
 import java.util.*;
 
 // GIT Commit Test
-// IntelliJ Fetch Test
+// IntelliJ Pull Test
 
 public class BigNum {
 	public static int[] findBiggest(List<Integer> lst, int ans_size_current) {
