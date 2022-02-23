@@ -6,6 +6,7 @@ public class H_index {
         int answer = 0;
 
         Arrays.sort(citations);
+        // 뒤에서부터 하나씩 논문들을 카운트한다.
         int num_citations = citations.length;
         for(int idx=0; idx<num_citations; idx++){
             if(citations[num_citations-1-idx] <= idx){
