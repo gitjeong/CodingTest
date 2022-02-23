@@ -3,19 +3,17 @@ import java.util.*;
 
 public class H_index {
     public int solution(int[] citations) {
-        int answer = 0;
-
         Arrays.sort(citations);
         // 뒤에서부터 하나씩 논문들을 카운트한다.
         int num_citations = citations.length;
-        for(int idx=0; idx<num_citations; idx++){
+        int idx = 0;
+        for(; idx<num_citations; idx++){
             if(citations[num_citations-1-idx] <= idx){
-                answer = idx;
                 break;
             }
         }
 
-        return answer;
+        return idx;
     }
 
     public static void main(String[] args){
