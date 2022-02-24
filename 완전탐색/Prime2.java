@@ -1,3 +1,4 @@
+package ì™„ì „íƒìƒ‰;
 import java.util.*;
 
 public class Prime2 {
@@ -34,7 +35,7 @@ public class Prime2 {
 		int answer=0;
 		String numbers = "011";
 		
-		// ¼ø¿­ ¸¸µé±â
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 		int n = numbers.length();
 		boolean[] visited = new boolean[numbers.length()];
 		Arrays.fill(visited, false);
